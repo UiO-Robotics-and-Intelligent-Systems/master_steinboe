@@ -1,0 +1,184 @@
+Running plan
+ssh ec-steinboe@fox.educloud.no
+
+
+
+todo: 
+
+før møte: kjør saveGraphs, men med OnlyRundata
+se om de lowess funksjonene gir mening. Tenk litt. De blir ikke perfekte
+
+kutt i hypervolume
+Endre litt i plotMultiConfig og plotMultiFronts, få til en average front, og plot den opp mot ulike config
+
+
+
+
+1/2/3:
+1
+0.02
+0
+0.02
+
+4?/5/6
+1
+0.02
+0.5
+0.02
+
+11/12/13
+1
+0.02
+0.3
+0.02
+
+
+
+
+
+
+r1 - Done!
+r2 - 3927
+r3 - Done
+r4 - 3585
+r5 - Done!
+r6 - Done!
+r7 - Done!
+r8 - Done!
+r9 - 3565   
+
+
+
+
+
+
+
+
+
+##################
+
+
+
+
+r1 run1 til 4096 - Denne er viktigst!
+r2 run2 til 4096 - bare ekstra mens vi venter på r1
+r3 run3 til 4096 - bare ekstra mens vi venter på r1
+
+
+Når r1 er på 4096:
+Split
+Kjør for n* morph 2, 4 og 6 til 2048. Gjerne n>1. (Da må du gjøre noe annet for mappestruktur)
+
+Ferdig ila mandag? Kan du ha møte på tirsdag?
+
+
+
+
+
+##############################
+
+r1-x m1-x m3-18-r3 m6-x
+
+r2-x m1-17-r6 m3-8-r5 m6-15-r4 
+
+r3-17-r1 m1-9-8 m3-0-r9 m6-9-r10
+
+r4
+r5
+r6
+r7
+
+r1
+r8
+r9 - ikke start før r3p1m3 failer
+r10
+
+
+
+
+
+
+
+
+Fortsett 01.02.2022.21.36.58 til 8192gen
+Start noen fra 1024 for denne kjøringen og kjør de til 8192? eller 4096?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################
+
+(ser på bare 0.3 nå)
+Velg 3 hovedtreninger (to veldig gode og en middels) (01.02.2022.21.36.58, 01.02.2022.21.38.34, 05.01.38) :
+For alle 3:
+    Kjør to typer morfologier: 2 og 5 eller noe:
+        for 511 og 1023:
+            Start både 32 og 64 individer.
+
+Et shell script for 32 og et for 64. På robin hpc
+Et shell script for hver trening:
+
+
+Se PretrainedMorphologies1.sh på ml-hpc for eks
+
+Lag 4 scripts:
+PretrainedMorph64_2  # må nok ha 60 cores
+PretrainedMorph64_5  # må ha 60 cores
+PretrainedMorph32_2  # må ha 30
+PretrainedMorph32_5  # må ha 30
+
+
+Har kjørt:
+01.02.2022.21.36.58: subGen511 64ind_2048gen morph2 og 5. ikke subGen1023
+01.02.2022.21.38.34: subGen511 64ind_2048gen morph2 og 5. ikke subGen1023
+01.02.2022.05.01.38: subGen511 64ind_2048gen morph2 og 5. ikke subGen1023
+
+
+Mangler:
+Hva må du kjøre?
+Plot det du har. Men du må kanskje kjøre med større populasjon
+Da må det kanskje sammenlignes med en større pop også? idk 
+
+
+
+For 0.1
+Del 1:                                                                              Jeg har:
+Pri 2: Tren co-0 i 2000 (2048)* 8 ganger (fortsett fra de over)                     Snart 8
+Pri 3: Tren co-0 med 128ind i 1000 (1024)* 8 ganger for 128 ind                     0 (disse kan trenes neste?)
+
+Del 2:
+Pri 1: Split opp i 8 morfologier (8 ulike treninger) fra 500 (512)                  0
+Pri 2: Split opp i 8 morfologier (8 ulike treninger) fra 1000 (1024)                0
+Pri 3: Split opp i 16 morfologier (8 ulike treninger) fra 500 (512) for 128 ind     0
+
+Bruk data fra del 1, som utgangspunkt i del 2
+Totalt evalueringer for en mutProb: 384k. Ca 1600cpu timer. Det er ikke så mye om ting får stå og gå uavbrutt. (12.5 timer med 128 cores lol)
+
+For 0.3
+                                                                                    Jeg har:
+Pri 2: Tren co-0 i 2000 (2048)* 8 ganger                                            8
+Pri 3: Tren co-0 med 128ind i 1000 (1024)* 8 ganger for 128 ind                     0
+
+med
+Pri 1: Split opp i 8 morfologier (8 ulike treninger) fra 500 (512)                  0
+Pri 2: Split opp i 8 morfologier (8 ulike treninger) fra 1000 (1024)                0
+Pri 3: Split opp i 16 morfologier (8 ulike treninger) fra 500 (512) for 128 ind     0
+
+
+TODO:
+*Gå over til 512/1024/245 gen nå!
+*Nytt mål for hypervolum
+*
+
+Når ting funker:
+Sett opp mange ulike jobber. og sett de i kø, de vil bli utført etterhverandre

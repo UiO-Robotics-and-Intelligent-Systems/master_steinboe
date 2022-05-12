@@ -1,0 +1,80 @@
+
+
+
+Nr & Pearson's &  & Spearman's & \\ \hline
+        0 &  0.269      &   ***   & 0.287     &   *** \\
+        1 &  0.021      &         & 0.107     &   *** \\
+
+
+\begin{tabular}{ll|ll|ll|ll}
+    \hline
+Anchor front                
+Pearson's &  & Spearman's & 
+ -0.286     &  ***    &  -0.151     &   ***     &   
+  0.242     &  ***    &  0.175      &   ***   &     
+ -0.022     &  s      &  0.203      &   ***   &       
+ 0.444      &  ***    &  -0.264     &   ***      &     
+ 0.361      &  ***    &  0.457      &   ***   &      
+ 0.355      &  ***    &  0.317      &   ***   &      
+
+
+
+\begin{tabular}{ll|ll}
+\hline
+\bfseries Anchor rear \\ \hline 
+Pearson's & Spearman's & \\ \hline
+-0.421 &    ***       &  -0.464  &  ***      \\
+-0.217 &    ***       &  -0.305  & ***      \\
+-0.053 &    s         &  -0.031  & s     \\
+-0.041 &    s         &  -0.105  &  *      \\
+-0.171 &    ***       &  -0.182  & ***     \\
+-0.214 &    ***       &  -0.258  & ***     \\
+\end{tabular}
+
+\begin{tabular}{ll|ll}
+\hline
+\bfseries Femur front \\ \hline                 
+Pearson's & Spearman's & \\ \hline
+ -0.079     &  s      &  0.163  & ***    \\   
+ -0.012     &  s      &  0.244  & ***   \\  
+ 0.386      &  ***    &  0.405  & ***  \\      
+ 0.664      &  ***    &  0.700  & ***  \\     
+ 0.274      &  ***    &  0.404  & ***  \\     
+ 0.299      &  ***    &  0.369  & ***  \\     
+\end{tabular}
+
+\begin{tabular}{ll|ll}
+\hline
+\bfseries Femur rear \\ \hline
+Pearson's & Spearman's & \\ \hline
+0.009 & s    &  0.192 & ***     \\
+0.521 & ***  & 0.563  & ***   \\
+0.468 & ***  & 0.607  & ***  \\
+0.387 & ***  & 0.401  & ***   \\
+0.491 & ***  & 0.611  & ***   \\
+0.525 & ***  & 0.659  & ***   \\
+\end{tabular}
+
+\begin{tabular}{ll|ll}
+\hline
+\bfseries Tibia front \\ \hline                
+Pearson's & Spearman's & \\ \hline
+0.818       &  ***    &  0.895  & ***   \\    
+0.777       &  ***    &  0.783  & ***   \\    
+0.821       &  ***    &  0.850  & ***   \\    
+0.954       &  ***    &  0.879  & ***   \\    
+0.745       &  ***    &  0.788  & ***   \\    
+0.824       &  ***    &  0.807  & ***   \\    
+\end{tabular}
+
+\begin{tabular}{ll|ll}
+\hline
+\bfseries Tibia rear \\ \hline
+Pearson's & Spearman's & \\ \hline
+0.791 & ***  & 0.892  & ***   \\
+0.821 & ***  & 0.854  & ***   \\
+0.801 & ***  & 0.824  & ***   \\
+0.909 & ***  & 0.900  & ***   \\
+0.824 & ***  & 0.856  & ***   \\
+0.872 & ***  & 0.866  & ***   \\
+\end{tabular}

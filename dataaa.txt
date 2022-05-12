@@ -1,0 +1,1 @@
+{"people": [{"name": "Travis", "website": "stackabuse.com", "from": "Nebraska"}, {"name": "Larry", "website": "google.com", "from": "Michigan"}, {"name": "Tim", "website": "apple.com", "from": "Alabama"}], "cat": [{"name": "Tim", "website": "apple.com", "from": "Alabama"}]}
